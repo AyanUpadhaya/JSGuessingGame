@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@200&family=Praise&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    margin-top: 20px;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+.input-group{
+    margin-top: 20px;
+}
+
+.input-box{
+    width: 350px;
+    height: 30px;
+    padding: 5px;
+    font-size: 15px;
+}
+.guess-btn{
+    color: #fff;
+    background-color: rgb(42, 6, 100);
+    border:none;
+    width: 100px;
+    padding: 5px;
+    font-size: large;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.result-section{
+    /* background-color: gray; */
+    margin-top: 20px;
+    text-align: center;
+}
+.description{
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(9, 134, 5);
+}
+.new-game{
+    display: none;
+    margin: auto;
+}
+.logo{
+    width: 300px;
+    text-align: center;
+    background-color: rgb(115, 36, 172);
+    color: rgb(215, 230, 230);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.pre-guess, .result{
+    color: rgb(100, 100, 100);
+    font-size: 25px;
+}
+.new-game{
+    color: #fff;
+    background-color: rgb(42, 6, 100);
+    border:none;
+    width: 150px;
+    padding: 5px;
+    font-size: large;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}

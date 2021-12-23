@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Guessing Game @ CodeTech</title>
+</head>
+<body>
+    <div class="game">
+        <div class="logo">
+            <h3>Guessing Game</h3>
+        </div>
+        <div class="description">
+            Choose a random number between 1 and 20. You have in total 5 turns.
+        </div>
+
+        <div class="input-group">
+            <form action="" class="game-form">
+                <input type="text" name="input-guess" id="input-guess" class="input-box">
+                <button type="button" id="input-btn" class="guess-btn">Guess</button>
+            </form>
+        </div>
+        <div class="result-section">
+            <p class="pre-guess"></p>
+            <p class="result"></p>
+            <button onclick="location.reload()" class="new-game">New Game</button>
+        </div>
+    </div>
+    <script src="script/app.js"></script>
+</body>
+</html>
