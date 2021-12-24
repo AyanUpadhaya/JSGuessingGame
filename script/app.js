@@ -41,18 +41,18 @@ function game(){
         newGame.style.display='none';
         preGuessList.push(guess.value);
         preGuess.innerText= preGuessList.join(',');
+         if (guess.value==computer){
+            guess.style.display='none';
+            btn.style.display='none';
+            newGame.style.display='block';
+            return resultText.innerText = "You are correct, Game Over";
+        }
 
         if (preGuessList.length==5){
             guess.style.display='none';
             btn.style.display='none';
             newGame.style.display='block';
 
-                if (guess.value==computer){
-                    guess.style.display='none';
-                    btn.style.display='none';
-                    newGame.style.display='block';
-                    return resultText.innerText = "You are correct, Game Over";
-                }
             return resultText.innerText = `Out of moves, Game Over, Number was ${computer}`;
         }
 
