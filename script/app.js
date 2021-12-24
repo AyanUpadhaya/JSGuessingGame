@@ -47,7 +47,12 @@ function game(){
             btn.style.display='none';
             newGame.style.display='block';
 
-                
+                if (guess.value==computer){
+                    guess.style.display='none';
+                    btn.style.display='none';
+                    newGame.style.display='block';
+                    return resultText.innerText = "You are correct, Game Over";
+                }
             return resultText.innerText = `Out of moves, Game Over, Number was ${computer}`;
         }
 
@@ -59,12 +64,7 @@ function game(){
             return resultText.innerText = `Too low, Moves Left: ${5-preGuessList.length}`;
         }
 
-        if (guess.value==computer){
-            guess.style.display='none';
-            btn.style.display='none';
-            newGame.style.display='block';
-            return resultText.innerText = "You are correct, Game Over";
-        }
+        
             
         
     }
